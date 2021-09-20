@@ -1,0 +1,49 @@
+﻿@model IEnumerable<EmployeeManagement.Models.Employee>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+            <tr>
+                <td>
+                    @employee.Id
+                </td>
+                <td>
+                    @employee.Name
+                </td>
+                <td>
+                    @employee.Department
+                </td>
+                <td>
+                    <!-- Manually generating the links  -->
+                    <a href="/home/details/@employee.Id">View</a>
+                </td>
+                <td>
+                    <!-- Using HTML helpers : generates an anchor element <a href="/home/details/5">View</a> -->
+                    @Html.ActionLink("View", "details", new { id = employee.Id })
+                </td>
+                <td>
+                    <!-- Using Tag Helpers : generates an anchor element <a href="/home/details/5">View</a> -->
+                    <a asp-controller="home" asp-action="details" asp-route-id="@employee.Id">View</a>
+                </td>
+                @*<td>
+                    <img src="~/images/noimage.jpg" asp-append-version="true" />
+                </td>*@
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
