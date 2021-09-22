@@ -1,0 +1,46 @@
+﻿
+@model Employee
+@{
+    ViewBag.Title = "Create Employee";
+}
+@* To create a form we use the <form> tag helper
+    asp-controller and asp-action tag helpers specify the controller and the action method to which the form data must be posted
+    The below code produces the following HTML when the form is rendered on the client browser:
+    <form method="post" action="/home/create"></form>*@
+<form asp-controller="home" asp-action="create" method="post" class="mt-3">
+    <div class="form-group row">
+        @* The Label Tag Helper generates a label with for attribute. The for attribute links the label with it's associated input element.
+            Generated HTML --> <label for="Name">Name</label>*@
+        <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            @* The Input Tag Helper binds an HTML <input> element to a model expression in your razor view.
+                The below element will bind text box to Name property of the Employee model class
+                The below code will generate following HTML --> <input type="text" id="Name" name="Name" value=""> *@
+            <input asp-for="Name" class="form-control" placeholder="Name">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Department" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            @* Generates select element and it's associated option elements. *@
+            <select asp-for="Department" class="custom-select mr-sm-2"
+                    asp-items="Html.GetEnumSelectList<Dept>()"></select>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Email" class="form-control" placeholder="Email">
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </div>
+</form>

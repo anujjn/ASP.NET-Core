@@ -34,11 +34,6 @@ namespace EmployeeManagement
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute("default", "xyz/{controller=Home}/{action=Index}/{id?}");
-            });
-
             if (env.IsDevelopment())
             {
                 DeveloperExceptionPageOptions developerExceptionPageOptions = new DeveloperExceptionPageOptions
@@ -52,7 +47,7 @@ namespace EmployeeManagement
 
             // Adds MVC to the Microsoft.AspNetCore.Builder.IApplicationBuilder request execution
             // pipeline with a default route named 'default' and the following template: '{controller=Home}/{action=Index}/{id?}'.
-            // app.UseMvcWithDefaultRoute();
+            app.UseMvcWithDefaultRoute();
 
             app.UseRouting();
 

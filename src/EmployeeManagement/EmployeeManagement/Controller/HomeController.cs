@@ -34,5 +34,10 @@ namespace EmployeeManagement
             // Pass the ViewModel object to the View() helper method
             return View(homeDetailsViewModel);
         }
+
+        public ViewResult Create()
+        {
+            return View();
+        }
     }
 }

@@ -30,8 +30,9 @@ C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManageme
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp3.1\libman.json
-C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.csproj.AssemblyReference.cache
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewStart.cshtml.g.cs
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
+C:\Users\AnujJain\Documents\ASP.NET-Core\src\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.csproj.AssemblyReference.cache
